@@ -1,33 +1,28 @@
-function Suma(a, b){ 
-    return a + b;
+const subproductos = [ 'minibrownie', 'cafe', 'tortitas' ]
+
+console.log( subproductos.indexOf('minibrownie'))
+console.log( subproductos.indexOf('cafe'))
+console.log( subproductos.indexOf('tortitas'))
+
+
+
+const productos = [
+    { id: 1, nombre: "Brownie", precio: 10000 },
+    { id: 2, nombre: "Caja de snacks", precio: 7000 },
+    { id: 3, nombre: "Tortas", precio: 12000 },
+];
+
+let producto = prompt("Ingrese el producto que desea buscar")
+let productoEncontrado = productos.find((item) => item.nombre === producto);
+
+if(productoEncontrado) {
+    alert(`
+     Id: ${productoEncontrado.id}
+     Nombre: ${productoEncontrado.nombre}
+     Precio: ${productoEncontrado.precio}
+    `);
+} else {
+    alert("Producto no disponible");
 }
-
-let resultado = Suma(5, 20);
-console.log(resultado);
-
-
-let presupuesto = Number(prompt("Ingrese su presupesto"))
-
-if (presupuesto < 7500) { 
-    alert("No puedes comprar ningun producto")
-}  else if (presupuesto < 30000) { 
-    alert("Puedes algunos de nuestros productos") 
-}   
-
-
-let perfil = prompt("Ingresa tu nombre")
-
-while (perfil != "ESC "){ 
-    switch (perfil) { 
-        case "Aitor":
-            alert("Hola Aitor");
-            break;
-
-        default:
-            alert("No hay datos registrados");
-            break;    
-    }
-}
-
-
+    
 
