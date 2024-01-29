@@ -1,9 +1,22 @@
+function Suma(a, b){ 
+    return a + b;
+}
+
+let resultado = Suma(5, 20);
+console.log(resultado);
+
+
 const subproductos = [ 'minibrownie', 'cafe', 'tortitas' ]
 
 console.log( subproductos.indexOf('minibrownie'))
 console.log( subproductos.indexOf('cafe'))
 console.log( subproductos.indexOf('tortitas'))
 
+let usuario = prompt("Ingresa tu nombre")
+
+if(usuario = "Aitor"){
+    alert("Bienvenido de vuelta Aitor")
+}
 
 
 const productos = [
